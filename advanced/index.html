@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tamarind Grove Zoo — Where the Wild Things Glow</title>
+  <meta name="description" content="Tamarind Grove Zoo: meet 300+ animals, book tickets, explore events and plan your visit.">
+  <meta name="theme-color" content="#07130d">
+  <meta name="author" content="Rishabh Aryan">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/hero.jpg" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/theme-init.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Tamarind Grove Zoo home">
+        <img src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span>Tamarind<em>Grove</em></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#animals">Animals</a></li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="fireflies" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="wrap hero-content">
+        <p class="eyebrow">Open daily · 60 acres · 300+ animals</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="line">Where the</span>
+          <span class="line gold">Wild Things</span>
+          <span class="line outline">Glow.</span>
+        </h1>
+        <p class="hero-lead">Step into Tamarind Grove — a lush sanctuary of savanna, monsoon forest and moonlit lagoons. Meet lions at golden hour, walk with flamingos and see the jungle wake up after dark.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tickets">Book tickets</a>
+          <a class="btn btn-ghost" href="#animals">Meet the animals</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Species</dt><dd data-count="84">84</dd></div>
+          <div><dt>Habitats</dt><dd data-count="9">9</dd></div>
+          <div><dt>Rescues this year</dt><dd data-count="127">127</dd></div>
+        </dl>
+      </div>
+      <a class="scroll-cue" href="#animals" aria-label="Scroll to animals"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Savanna Trail</span><span>✦</span><span>Monsoon Forest</span><span>✦</span><span>Himalayan Heights</span><span>✦</span><span>Rainforest Dome</span><span>✦</span><span>Penguin Point</span><span>✦</span><span>Lotus Lagoon</span><span>✦</span><span>Ocean Hall</span><span>✦</span>
+        <span>Savanna Trail</span><span>✦</span><span>Monsoon Forest</span><span>✦</span><span>Himalayan Heights</span><span>✦</span><span>Rainforest Dome</span><span>✦</span><span>Penguin Point</span><span>✦</span><span>Lotus Lagoon</span><span>✦</span><span>Ocean Hall</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ANIMALS -->
+    <section class="section" id="animals" aria-labelledby="animals-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">The residents</p>
+          <h2 id="animals-title">Meet the animals</h2>
+          <p>Search by name or habitat, filter by group, and tap a card to learn their story.</p>
+        </header>
+
+        <div class="toolbar reveal" role="search">
+          <label class="search">
+            <span class="sr-only">Search animals</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input id="animal-search" type="search" placeholder="Search lion, forest, bamboo…" autocomplete="off">
+          </label>
+          <div class="chips" role="group" aria-label="Filter by group">
+            <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-filter="mammals" aria-pressed="false">Mammals</button>
+            <button class="chip" type="button" data-filter="birds" aria-pressed="false">Birds</button>
+            <button class="chip" type="button" data-filter="reptiles" aria-pressed="false">Reptiles</button>
+          </div>
+        </div>
+        <p class="result-count" id="animal-count" aria-live="polite"></p>
+        <ul class="animal-grid" id="animal-grid"></ul>
+        <p class="empty" id="animal-empty" hidden>No animals match that search. Try “forest” or “bird”.</p>
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+    <section class="section section-alt" id="tickets" aria-labelledby="tickets-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Plan the day</p>
+          <h2 id="tickets-title">Book your tickets</h2>
+          <p>Three quick steps. Your price updates live — no payment needed online, just show your booking reference at the gate.</p>
+        </header>
+
+        <div class="booking reveal">
+          <form class="booking-form glass" id="booking-form" novalidate>
+            <ol class="steps">
+              <li class="is-current" data-step-label="1"><span>1</span> Date</li>
+              <li data-step-label="2"><span>2</span> Tickets</li>
+              <li data-step-label="3"><span>3</span> Details</li>
+            </ol>
+
+            <fieldset class="step" data-step="1">
+              <legend>When are you visiting?</legend>
+              <div class="field">
+                <label for="visit-date">Visit date</label>
+                <input id="visit-date" name="date" type="date" required aria-describedby="visit-date-error">
+                <p class="error" id="visit-date-error"></p>
+              </div>
+              <div class="field">
+                <span class="label" id="slot-label">Arrival time</span>
+                <div class="slots" role="radiogroup" aria-labelledby="slot-label">
+                  <label class="slot"><input type="radio" name="slot" value="9:00 AM" checked> <span>9:00 AM</span></label>
+                  <label class="slot"><input type="radio" name="slot" value="11:30 AM"> <span>11:30 AM</span></label>
+                  <label class="slot"><input type="radio" name="slot" value="2:00 PM"> <span>2:00 PM</span></label>
+                  <label class="slot"><input type="radio" name="slot" value="4:00 PM"> <span>4:00 PM</span></label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="2" hidden>
+              <legend>Who is coming?</legend>
+              <div class="qty-row">
+                <span class="qty-label" id="q-adult-l">Adults <small>13–59 · ₹300</small></span>
+                <div class="qty"><button type="button" class="qty-btn" data-target="adult" data-delta="-1" aria-label="Remove one adult">−</button><input id="q-adult" type="number" min="0" max="20" value="2" aria-labelledby="q-adult-l" data-type="adult"><button type="button" class="qty-btn" data-target="adult" data-delta="1" aria-label="Add one adult">+</button></div>
+              </div>
+              <div class="qty-row">
+                <span class="qty-label" id="q-child-l">Children <small>3–12 · ₹150</small></span>
+                <div class="qty"><button type="button" class="qty-btn" data-target="child" data-delta="-1" aria-label="Remove one child">−</button><input id="q-child" type="number" min="0" max="20" value="0" aria-labelledby="q-child-l" data-type="child"><button type="button" class="qty-btn" data-target="child" data-delta="1" aria-label="Add one child">+</button></div>
+              </div>
+              <div class="qty-row">
+                <span class="qty-label" id="q-senior-l">Seniors <small>60+ · ₹200</small></span>
+                <div class="qty"><button type="button" class="qty-btn" data-target="senior" data-delta="-1" aria-label="Remove one senior">−</button><input id="q-senior" type="number" min="0" max="20" value="0" aria-labelledby="q-senior-l" data-type="senior"><button type="button" class="qty-btn" data-target="senior" data-delta="1" aria-label="Add one senior">+</button></div>
+              </div>
+              <p class="hint">Under 3s go free.</p>
+              <div class="addons">
+                <label class="check"><input type="checkbox" id="addon-safari" name="safari"> <span>Savanna safari ride <small>₹120 per person</small></span></label>
+                <label class="check"><input type="checkbox" id="addon-parking" name="parking"> <span>Car parking <small>₹50 per car</small></span></label>
+              </div>
+              <p class="error" id="qty-error"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="3" hidden>
+              <legend>Your details</legend>
+              <div class="field">
+                <label for="b-name">Full name</label>
+                <input id="b-name" name="name" type="text" autocomplete="name" required aria-describedby="b-name-error">
+                <p class="error" id="b-name-error"></p>
+              </div>
+              <div class="field">
+                <label for="b-email">Email</label>
+                <input id="b-email" name="email" type="email" autocomplete="email" required aria-describedby="b-email-error">
+                <p class="error" id="b-email-error"></p>
+              </div>
+            </fieldset>
+
+            <div class="step-actions">
+              <button class="btn btn-ghost" type="button" id="step-back" hidden>Back</button>
+              <button class="btn btn-primary" type="submit" id="step-next">Continue</button>
+            </div>
+          </form>
+
+          <aside class="summary glass" aria-labelledby="summary-title">
+            <h3 id="summary-title">Your visit</h3>
+            <ul class="summary-lines" id="summary-lines"></ul>
+            <p class="summary-total"><span>Total</span> <strong id="summary-total" aria-live="polite">₹0</strong></p>
+            <p class="summary-note">Pay at the gate. Free cancellation, any time.</p>
+          </aside>
+        </div>
+
+        <div class="confirmation glass" id="confirmation" hidden tabindex="-1">
+          <div class="confirm-badge" aria-hidden="true">✓</div>
+          <h3>You're booked!</h3>
+          <p id="confirm-text"></p>
+          <ul class="summary-lines" id="confirm-lines"></ul>
+          <p class="summary-total"><span>Total at the gate</span> <strong id="confirm-total"></strong></p>
+          <button class="btn btn-ghost" type="button" id="book-again">Make another booking</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section" id="events" aria-labelledby="events-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">What's on</p>
+          <h2 id="events-title">Events &amp; experiences</h2>
+          <p>All included with your ticket. Filter to find your thing.</p>
+        </header>
+        <div class="chips reveal" role="group" aria-label="Filter events" id="event-filters">
+          <button class="chip is-active" type="button" data-type="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-type="feeding" aria-pressed="false">Feeding</button>
+          <button class="chip" type="button" data-type="talks" aria-pressed="false">Talks</button>
+          <button class="chip" type="button" data-type="kids" aria-pressed="false">Kids</button>
+          <button class="chip" type="button" data-type="night" aria-pressed="false">After dark</button>
+        </div>
+        <ul class="event-list" id="event-list"></ul>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section-alt" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Moments</p>
+          <h2 id="gallery-title">Gallery</h2>
+          <p>Click any photo. Use ← → to browse and Esc to close.</p>
+        </header>
+        <ul class="gallery-grid" id="gallery-grid"></ul>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Good to know</p>
+          <h2 id="visit-title">Plan your visit</h2>
+        </header>
+        <div class="info-grid">
+          <article class="info-card glass reveal">
+            <h3>Opening hours</h3>
+            <table class="hours">
+              <caption class="sr-only">Opening hours</caption>
+              <tbody>
+                <tr><th scope="row">Tue – Fri</th><td>9:00 AM – 5:30 PM</td></tr>
+                <tr><th scope="row">Sat – Sun</th><td>8:30 AM – 6:30 PM</td></tr>
+                <tr><th scope="row">Monday</th><td>Closed for animal care</td></tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="info-card glass reveal">
+            <h3>Getting here</h3>
+            <p>12 Banyan Road, Green Valley. City buses 21 and 34 stop at the main gate. Free bicycle parking, paid car parking on site.</p>
+          </article>
+          <article class="info-card glass reveal">
+            <h3>Accessibility</h3>
+            <p>Step-free paths throughout, free wheelchair hire, quiet rooms and accessible toilets at every hub.</p>
+          </article>
+          <article class="info-card glass reveal">
+            <h3>Eat &amp; rest</h3>
+            <p>The Canopy Café, three water refill stations, shaded picnic lawns and a gift shop by the exit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Say hello</p>
+          <h2 id="contact-title">Contact us</h2>
+          <p>Questions about your visit, school trips or volunteering? Drop us a line.</p>
+        </header>
+        <form class="contact-form glass reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required aria-describedby="c-name-error">
+            <p class="error" id="c-name-error"></p>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="c-email-error">
+            <p class="error" id="c-email-error"></p>
+          </div>
+          <div class="field">
+            <label for="c-topic">Topic</label>
+            <select id="c-topic" name="topic">
+              <option>General question</option>
+              <option>School or group visit</option>
+              <option>Volunteering</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="5" required aria-describedby="c-message-error"></textarea>
+            <p class="error" id="c-message-error"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="contact-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top"><img src="assets/img/logo.svg" alt="" width="32" height="32"><span>Tamarind<em>Grove</em></span></a>
+      <p>&copy; 2026 Rishabh Aryan</p>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Animal detail modal -->
+  <dialog class="modal" id="animal-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="icon-btn modal-close" type="button" aria-label="Close details">✕</button>
+      <img id="modal-img" src="assets/img/lion.jpg" alt="">
+      <div class="modal-body">
+        <p class="eyebrow" id="modal-region"></p>
+        <h3 id="modal-title">Animal</h3>
+        <p id="modal-about"></p>
+        <dl class="facts">
+          <div><dt>Diet</dt><dd id="modal-diet"></dd></div>
+          <div><dt>Lifespan</dt><dd id="modal-life"></dd></div>
+          <div><dt>Status</dt><dd id="modal-status"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Gallery lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="icon-btn lb-close" type="button" aria-label="Close viewer">✕</button>
+    <button class="icon-btn lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <figure>
+      <img id="lb-img" src="assets/img/lion.jpg" alt="">
+      <figcaption><span id="lb-caption"></span> <span class="lb-count" id="lb-count"></span></figcaption>
+    </figure>
+    <button class="icon-btn lb-next" type="button" aria-label="Next photo">›</button>
+  </dialog>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

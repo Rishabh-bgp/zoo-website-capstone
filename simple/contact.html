@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamarind Grove Zoo - Contact">
+  <title>Contact | Tamarind Grove Zoo</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- top bar with logo and menu -->
+  <header>
+    <div class="container clearfix">
+      <a class="logo" href="index.html">Tamarind Grove Zoo</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question about your visit? Send us a message and we will get back to you.</p>
+      <p><b>Address:</b> 12 Banyan Road, Green Valley<br>
+         <b>Phone:</b> 000-000-0000 (example)<br>
+         <b>Email:</b> hello@example.com</p>
+
+      <!-- this form does not really send anything, script.js checks it -->
+      <form id="contactForm" novalidate>
+        <label for="name">Your Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email">
+
+        <label for="text">Message</label>
+        <textarea id="text" rows="5"></textarea>
+
+        <button class="button" type="submit">Send Message</button>
+        <p class="message" id="formMessage"></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- bottom of the page -->
+  <footer>
+    <p>&copy; 2026 Rishabh Aryan</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

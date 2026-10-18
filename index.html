@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoo Website Capstone — Rishabh Aryan</title>
+  <meta name="description" content="Capstone project by Rishabh Aryan: a simple and an advanced website for the fictional Tamarind Grove Zoo.">
+  <link rel="icon" href="advanced/assets/img/logo.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 2rem 1.25rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #ecf3ee;
+      background: radial-gradient(900px 500px at 15% 0%, rgba(92, 255, 176, .12), transparent 60%), radial-gradient(800px 500px at 100% 100%, rgba(245, 184, 61, .14), transparent 60%), #06110c; }
+    main { width: min(100%, 960px); text-align: center; }
+    .eyebrow { letter-spacing: .25em; text-transform: uppercase; font-size: .8rem; font-weight: 700; color: #f5b83d; }
+    h1 { font-size: clamp(2.4rem, 8vw, 4.8rem); line-height: .95; margin: .5rem 0 1rem; text-transform: uppercase; font-weight: 900; letter-spacing: -.02em; }
+    h1 span { background: linear-gradient(100deg, #ffd978, #f5b83d 45%, #ff7a45); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    p.lead { color: #a6b8ad; max-width: 36rem; margin: 0 auto 2.5rem; font-size: 1.1rem; line-height: 1.6; }
+    .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    a.card { display: block; text-align: left; text-decoration: none; color: inherit; padding: 1.75rem; border-radius: 18px; border: 1px solid rgba(255, 255, 255, .12); background: rgba(18, 40, 30, .55); transition: transform .3s, border-color .3s, box-shadow .3s; }
+    a.card:hover, a.card:focus-visible { transform: translateY(-4px); border-color: #f5b83d; box-shadow: 0 20px 50px -20px rgba(245, 184, 61, .5); outline: none; }
+    a.card h2 { margin: .25rem 0 .5rem; font-size: 1.6rem; text-transform: uppercase; }
+    a.card p { margin: 0; color: #a6b8ad; line-height: 1.5; }
+    .tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #5cffb0; }
+    .go { display: inline-block; margin-top: 1rem; color: #ffd978; font-weight: 700; }
+    footer { margin-top: 3rem; color: #a6b8ad; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Capstone project</p>
+    <h1>Tamarind Grove <span>Zoo</span></h1>
+    <p class="lead">One fictional zoo, built twice: a beginner-friendly version and a polished modern version. Plain HTML, CSS and JavaScript — no frameworks, no build step.</p>
+    <div class="grid">
+      <a class="card" href="simple/index.html">
+        <span class="tag">Version 1</span>
+        <h2>Simple</h2>
+        <p>Seven pages, one stylesheet and one small script with beginner comments.</p>
+        <span class="go">Open simple site →</span>
+      </a>
+      <a class="card" href="advanced/index.html">
+        <span class="tag">Version 2</span>
+        <h2>Advanced</h2>
+        <p>Cinematic, responsive, dark/light themes, live search, booking flow and lightbox.</p>
+        <span class="go">Open advanced site →</span>
+      </a>
+    </div>
+    <footer>&copy; 2026 Rishabh Aryan</footer>
+  </main>
+</body>
+</html>

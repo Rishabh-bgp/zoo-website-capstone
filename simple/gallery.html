@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamarind Grove Zoo - Gallery">
+  <title>Gallery | Tamarind Grove Zoo</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- top bar with logo and menu -->
+  <header>
+    <div class="container clearfix">
+      <a class="logo" href="index.html">Tamarind Grove Zoo</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <p>Click on any photo to see it bigger.</p>
+      <div class="gallery">
+        <img src="images/lion.jpg" alt="Two male lions resting on the ground">
+        <img src="images/elephant.jpg" alt="An African elephant with long tusks walking in grass">
+        <img src="images/giraffe.jpg" alt="Close-up of a giraffe's head and neck">
+        <img src="images/zebra.jpg" alt="A large herd of zebras at a waterhole">
+        <img src="images/tiger.jpg" alt="A Bengal tiger walking on green grass">
+        <img src="images/red-panda.jpg" alt="A red panda looking out from green leaves">
+        <img src="images/gorilla.jpg" alt="A gorilla sitting in front of a rock wall">
+        <img src="images/penguin.jpg" alt="A penguin standing on grey rocks">
+        <img src="images/flamingo.jpg" alt="A pink flamingo bending its neck over the water">
+        <img src="images/macaw.jpg" alt="A bright red, yellow and blue macaw">
+        <img src="images/turtle.jpg" alt="A green sea turtle swimming over a coral reef">
+      </div>
+    </div>
+  </main>
+
+  <!-- big photo viewer, shown by script.js -->
+  <div id="bigView">
+    <img id="bigImage" src="images/lion.jpg" alt="Big photo">
+    <p id="bigCaption"></p>
+    <button class="button" id="prevButton" type="button">&lt; Previous</button>
+    <button class="button" id="closeButton" type="button">Close</button>
+    <button class="button" id="nextButton" type="button">Next &gt;</button>
+  </div>
+
+  <!-- bottom of the page -->
+  <footer>
+    <p>&copy; 2026 Rishabh Aryan</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

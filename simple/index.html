@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamarind Grove Zoo - Home">
+  <title>Home | Tamarind Grove Zoo</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- top bar with logo and menu -->
+  <header>
+    <div class="container clearfix">
+      <a class="logo" href="index.html">Tamarind Grove Zoo</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- big picture at the top -->
+  <div class="banner">
+    <h1>Welcome to Tamarind Grove Zoo</h1>
+    <p>Meet over 300 amazing animals in one green, happy place.</p>
+    <a class="button" href="tickets.html">Get Tickets</a>
+  </div>
+
+  <main>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Tamarind Grove Zoo is a family-friendly zoo spread across 60 acres of shady trees, ponds and open grassland. We care for animals from five continents and work hard to protect wildlife in nature.</p>
+      <p>Every visit helps us look after our animals and support conservation projects around the world.</p>
+
+      <!-- fun fact box, the button is used in script.js -->
+      <div class="fact-box">
+        <h3>Did you know?</h3>
+        <p id="factText">Click the button to learn a fun animal fact!</p>
+        <button class="button" id="factButton" type="button">Show me a fact</button>
+      </div>
+
+      <h2>Our Star Animals</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/lion.jpg" alt="Two male lions resting on the ground">
+          <div class="card-text">
+            <h3>Lions</h3>
+            <p>Our lion brothers Raja and Sultan love sunbathing on their big rock.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/red-panda.jpg" alt="A red panda looking out from green leaves">
+          <div class="card-text">
+            <h3>Red Pandas</h3>
+            <p>Shy and fluffy, our red pandas are most active early in the morning.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/penguin.jpg" alt="A penguin standing on grey rocks">
+          <div class="card-text">
+            <h3>Penguins</h3>
+            <p>Watch our penguins dive and splash at Penguin Point every afternoon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- bottom of the page -->
+  <footer>
+    <p>&copy; 2026 Rishabh Aryan</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

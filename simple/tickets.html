@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamarind Grove Zoo - Tickets">
+  <title>Tickets | Tamarind Grove Zoo</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- top bar with logo and menu -->
+  <header>
+    <div class="container clearfix">
+      <a class="logo" href="index.html">Tamarind Grove Zoo</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Tickets</h1>
+      <p>Buy your tickets at the gate. Use the calculator below to find out how much your visit will cost.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Adult (13 to 59 years)</td>
+          <td>&#8377;300</td>
+        </tr>
+        <tr>
+          <td>Child (3 to 12 years)</td>
+          <td>&#8377;150</td>
+        </tr>
+        <tr>
+          <td>Senior (60+ years)</td>
+          <td>&#8377;200</td>
+        </tr>
+        <tr>
+          <td>Under 3 years</td>
+          <td>Free</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h2>Price Calculator</h2>
+      <!-- the calculator is made with script.js -->
+      <form id="ticketForm">
+        <label for="adults">Adults</label>
+        <input type="number" id="adults" min="0" value="0">
+
+        <label for="children">Children</label>
+        <input type="number" id="children" min="0" value="0">
+
+        <label for="seniors">Seniors</label>
+        <input type="number" id="seniors" min="0" value="0">
+
+        <button class="button" id="calcButton" type="submit">Calculate</button>
+        <p class="message" id="total"></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- bottom of the page -->
+  <footer>
+    <p>&copy; 2026 Rishabh Aryan</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
